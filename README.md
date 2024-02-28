@@ -66,7 +66,7 @@ We welcome contributions! If you'd like to contribute to Venky Photo Studio, ple
 
 ## Contact
 
-If you have any questions or concerns, feel free to reach out to us at [venkykumar06@egmail.com]].
+If you have any questions or concerns, feel free to reach out to us at venkykumar06@egmail.com.
 
 Happy photographing!
 ```
