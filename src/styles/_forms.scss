@@ -1,0 +1,29 @@
+.login,
+.register,
+.forgot-password,
+.reset-password,
+.login-with-otp {
+  @apply py-4 min-h-screen;
+  background: linear-gradient(
+    90deg,
+    rgb(244, 246, 249) 0%,
+    rgb(216, 224, 232) 100%
+  );
+  input {
+    @apply focus:bg-white focus:px-4 default-transition;
+  }
+
+  .containers {
+    max-width: 1080px;
+  }
+}
+.active-link {
+  @apply bg-moonstone rounded-lg text-white shadow-button;
+}
+
+.form-element {
+  @apply default-transition;
+  &:has(input:focus) {
+    border-bottom-color: rgba(51, 51, 51, 0.5);
+  }
+}

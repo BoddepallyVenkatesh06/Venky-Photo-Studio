@@ -1,0 +1,36 @@
+
+// masonry
+.my-masonry-grid {
+  display: flex;
+  margin-right: 15px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 15px;
+  background-clip: padding-box;
+}
+
+.masonry-item {
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+}
+.masonry-wrapper {
+  --mask: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) 87%,
+      rgba(0, 0, 0, 0) 95%,
+      rgba(0, 0, 0, 0) 0
+    )
+    100% 50% / 100% 100% repeat-x;
+
+  // border: 1px #d8d8d8 dashed;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}

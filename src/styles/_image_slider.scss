@@ -1,0 +1,80 @@
+// react image css customized
+.image-gallery-image {
+}
+
+.image-gallery-icon {
+  box-shadow: none !important;
+  filter: none;
+  .image-gallery-svg {
+    color: #00BCD4 !important;
+    box-shadow: none;
+    filter: none;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(100vh - 220px);
+}
+
+.image-gallery-thumbnails-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.image-gallery-thumbnail {
+  // height: 200px;
+  // width: 300px;
+  flex: 1!important;
+  height: 80px!important;
+
+  .image-gallery-thumbnail-inner {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: conver !important;
+  }
+
+  .image-gallery-thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .image-gallery-thumbnail{
+    height: 120px!important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .image-gallery-thumbnail{
+    height: 160px!important;
+  }
+}
+@media screen and (min-width: 678px) {
+  .image-gallery-thumbnail{
+    height: 200px!important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image-gallery-thumbnail{
+    max-width: 300px!important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-gallery-thumbnail{
+    max-width: 100%!important;
+  }
+}
+
+
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus,
+.image-gallery-thumbnail:hover {
+  @apply border-moonstone border-[3px];
+}

@@ -1,0 +1,14 @@
+// scrollbar
+.preview-modal, .upload-drawer{
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 100vh;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 100vh;
+    }
+  }

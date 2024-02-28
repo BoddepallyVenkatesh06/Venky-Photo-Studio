@@ -1,0 +1,55 @@
+.bg-blue-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 143, 161, 1) 0%,
+      rgba(0, 188, 212, 1) 100%
+    );
+  }
+  
+  .bg-pink-gradient {
+    background: linear-gradient(
+      90deg,
+      rgb(214, 47, 86) 0%,
+      rgba(239, 71, 111, 1) 100%
+    );
+  }
+  
+  .text-blue-gradient {
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(0, 143, 161, 1) 0%,
+      rgba(0, 188, 212, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-pink-gradient {
+    background: -webkit-linear-gradient(
+      90deg,
+      rgb(214, 47, 86) 0%,
+      rgba(239, 71, 111, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .default-transition {
+    @apply ease-in-out transition-all duration-300;
+  }
+  .overlay-black-gradient {
+    @apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full;
+  }
+  .overlay-black-gradient::after {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 63%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+  .object-fit-cover {
+    @apply w-full h-full block object-cover;
+  }
+  
+  .default-shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
